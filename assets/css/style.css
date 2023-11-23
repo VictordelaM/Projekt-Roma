@@ -136,6 +136,8 @@ nav a{
     font-size: 2.638rem;
     font-weight: 700;
     background-color: rgba(51, 51, 51, 0.4);
+    background-position: center;
+    background-size: cover;
 }
 
 .yellowText,
@@ -219,7 +221,7 @@ footer{
     padding: 15vh 60vw 3vh 20vw;
 }
 
-footer a {
+.donate {
     border: 1px solid #FFF;
     background: #000;
     color: #FFF;
@@ -243,18 +245,20 @@ footer a {
     margin-top: 20vh;
 }
 
-.inspire span{
+.netflix{
     color: #6BC1A3;
     font-family: "Inter";
     font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
-footer a:hover {
+.donate:hover {
     box-shadow: white 5px 5px;
 }
+
 
 @media only screen and (max-width: 576px) {
     nav{
@@ -280,7 +284,7 @@ footer a:hover {
     .footerText{
         padding: 10%;
     }
-    footer a{
+    .donate{
         margin: 10% 0 0 35%;
     }
     .frame{
