@@ -18,11 +18,18 @@
     font-family: "Mr Dafoe";
     src: url("../fonts/Mr_Dafoe/MrDafoe-Regular.ttf");
 }
+
+html{
+    width: 100%;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
+
 
 .mainPic{
     background-image: url("../img/Lev3_1_Project_css-vertiefung_roma/cleo-topper.jpg");
@@ -32,6 +39,7 @@
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 nav{
@@ -45,6 +53,7 @@ nav{
 img{
     width: 100px;
     height: 100px;
+    margin-bottom: 3vh;
 }
 
 .navPic{
@@ -77,7 +86,17 @@ nav a{
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: -2px;
-    margin: 10vh 80vw 0 15vh;
+    margin: 10vh 0 0 15vh;
+    display: flex;
+}
+
+.scroll span{
+    color: #E7BC0E;
+    font-family: "Helvetica Neue";          /*.scroll::after wäre auch anstatt .scroll span möglich aber bereits gelöst*/
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 1.5vh 0 0 3vw;
 }
 
 .text{
@@ -96,11 +115,10 @@ nav a{
     font-weight: 700;
     line-height: 49.2px;
     background-color: rgba(51, 51, 51, 0.4);
-    }
+}
 
 .yellow, .pink, .green{
     margin: 15vh auto;
-    width: 25vw;
 }
 
 .yellow h1{
@@ -128,6 +146,7 @@ nav a{
     font-family: "Santio";
     font-size: 3.138rem;
     font-weight: 700;
+    width: 40vw;
 }
 
 .yellowText {
@@ -145,21 +164,21 @@ nav a{
 .salary{
     color: #CB91B6;
     font-family: "Santio";
-    font-size: 95.6px;
+    font-size: 5.975rem;
     font-weight: 700;
 }
 
 .green h1{
     color: #6BC1A3;
     font-family: "Santio";
-    font-size: 111px;
+    font-size: 6.9375rem;
     font-weight: 700;
 }
 
 .blueText{
     color: #7EB8E1;
     font-family:" Santio";
-    font-size: 35.2px;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 139.773%;
     width: 35vw;
@@ -169,8 +188,7 @@ nav a{
 .blueText span{
     color: #FFF;
     font-family: "Santio";
-    font-size: 35.2px;
-    font-style: normal;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 49.2px;
     background-color: rgba(51, 51, 51, 0.4);
@@ -184,12 +202,13 @@ nav a{
     background-repeat: repeat;
     background-size: cover;
     margin-bottom: -3vh;
+    width: 100%;
+    background-attachment: fixed;
 }
 
 
 footer{
     background-color: black;
-    /* padding-bottom: 15vh; */
     /* display: flex;
     flex-direction: column; */
 }
@@ -197,7 +216,7 @@ footer{
 .footerText{
     color: #FFF;
     font-family: "Inter";
-    font-size: 47px;
+    font-size: 2.9375rem;
     font-weight: 700;
     padding: 15vh 60vw 3vh 20vw;
 }
@@ -207,7 +226,7 @@ footer a {
     background: #000;
     color: #FFF;
     font-family: "Roboto";
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -221,7 +240,7 @@ footer a {
     color: #FFF;
     text-align: center;
     font-family: "Roboto";
-    font-size: 12.8px;
+    font-size: 0.8rem;
     font-weight: 400;
     margin-top: 20vh;
 }
@@ -229,7 +248,7 @@ footer a {
 .inspire span{
     color: #6BC1A3;
     font-family: "Inter";
-    font-size: 12.8px;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -237,4 +256,33 @@ footer a {
 
 footer a:hover {
     box-shadow: white 5px 5px;
+}
+
+@media only screen and (max-width: 576px) {
+    nav{
+        
+    }
+    .title{
+        margin: auto 50% 0 5%;
+    }
+    .scroll{
+        margin: 10% auto 15%;
+    }
+    .text{
+        padding: 5%;
+        margin: auto;
+    }
+    .blueText{
+        width: 80%;
+        margin: 0% 15% 45%;
+    }
+    .yellow{
+        margin: 0 0 0 5%;
+    }
+    .footerText{
+        padding: 10%;
+    }
+    footer a{
+        margin: 10% 0 0 35%;
+    }
 }
