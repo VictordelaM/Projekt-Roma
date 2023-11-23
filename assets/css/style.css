@@ -30,7 +30,6 @@ html{
 
 }
 
-
 .mainPic{
     background-image: url("../img/Lev3_1_Project_css-vertiefung_roma/cleo-topper.jpg");
     background-position: center;
@@ -195,7 +194,6 @@ nav a{
 }
 
 .smallPic img{
-    width: 100vw;
     height: max-content;
     background-image: url(../img/Lev3_1_Project_css-vertiefung_roma/see.png);
     background-position: center;
@@ -284,5 +282,21 @@ footer a:hover {
     }
     footer a{
         margin: 10% 0 0 35%;
+    }
+    .frame{
+        height: 100vh;
+        background-image: url('../img/Lev3_1_Project_css-vertiefung_roma/cleo-topper.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: scroll;
+        z-index: -100;
+    }
+    .mainPic{
+        background-image: none;
+    }
+
+    .smallPic img{
+        height: 50%;
     }
 }
